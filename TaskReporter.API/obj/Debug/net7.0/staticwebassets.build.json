@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Y3k12xkSwSWmQzp/3RkVsN8ASzrgLr0cC6Irggg+6sE=",
+  "Source": "TaskReporter.API",
+  "BasePath": "_content/TaskReporter.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

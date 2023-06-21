@@ -1,0 +1,15 @@
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\bin\Debug\net7.0\TaskReporter.Domain.deps.json
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\bin\Debug\net7.0\TaskReporter.Domain.dll
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\bin\Debug\net7.0\TaskReporter.Domain.pdb
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\bin\Debug\net7.0\TaskReporter.Core.dll
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\bin\Debug\net7.0\TaskReporter.Core.pdb
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\obj\Debug\net7.0\TaskReporter.Domain.csproj.AssemblyReference.cache
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\obj\Debug\net7.0\TaskReporter.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\obj\Debug\net7.0\TaskReporter.Domain.AssemblyInfoInputs.cache
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\obj\Debug\net7.0\TaskReporter.Domain.AssemblyInfo.cs
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\obj\Debug\net7.0\TaskReporter.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\obj\Debug\net7.0\TaskReporter.Domain.csproj.CopyComplete
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\obj\Debug\net7.0\TaskReporter.Domain.dll
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\obj\Debug\net7.0\refint\TaskReporter.Domain.dll
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\obj\Debug\net7.0\TaskReporter.Domain.pdb
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Domain\obj\Debug\net7.0\ref\TaskReporter.Domain.dll

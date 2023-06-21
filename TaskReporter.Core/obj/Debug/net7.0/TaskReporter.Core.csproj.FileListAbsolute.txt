@@ -1,0 +1,12 @@
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\bin\Debug\net7.0\TaskReporter.Core.deps.json
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\bin\Debug\net7.0\TaskReporter.Core.dll
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\bin\Debug\net7.0\TaskReporter.Core.pdb
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\obj\Debug\net7.0\TaskReporter.Core.csproj.AssemblyReference.cache
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\obj\Debug\net7.0\TaskReporter.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\obj\Debug\net7.0\TaskReporter.Core.AssemblyInfoInputs.cache
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\obj\Debug\net7.0\TaskReporter.Core.AssemblyInfo.cs
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\obj\Debug\net7.0\TaskReporter.Core.csproj.CoreCompileInputs.cache
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\obj\Debug\net7.0\TaskReporter.Core.dll
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\obj\Debug\net7.0\refint\TaskReporter.Core.dll
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\obj\Debug\net7.0\TaskReporter.Core.pdb
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Core\obj\Debug\net7.0\ref\TaskReporter.Core.dll
