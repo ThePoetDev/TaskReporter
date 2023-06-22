@@ -8,6 +8,6 @@ public interface IDailyReportService
     DailyReportDTO GetById(int id);
     void Insert(DailyReportCreateDTO entity);
     void Delete(int id);
-    void Update(int id, DailyReportCreateDTO entity);
+    void Update(DailyReportDTO entity);
     List<DailyReport> GetAll();
 }

@@ -34,9 +34,9 @@ public class DailyReportController
     }
     
     [HttpPut("DailyUpdate")]
-    public void Update(int id, DailyReportCreateDTO report)
+    public void Update(DailyReportDTO report)
     {
-        _dailyReportService.Update(id, report);
+        _dailyReportService.Update(report);
     }
 
     [HttpGet("DailyGetAll")]

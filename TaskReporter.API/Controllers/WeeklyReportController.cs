@@ -34,9 +34,9 @@ public class WeeklyReportController
     }
 
     [HttpPut("WeeklyUpdate")]
-    public void Update(int id, WeeklyReportCreateDTO report)
+    public void Update(WeeklyReportDTO report)
     {
-        _weeklyReportService.Update(id, report);
+        _weeklyReportService.Update(report);
     }
 
     [HttpGet("WeeklyGetAll")]

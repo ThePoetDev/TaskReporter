@@ -33,7 +33,7 @@ public class MonthlyReportRepository : IMonthlyReportReposity
         _dbContext.SaveChanges();
     }
 
-    public void Update(int id, MonthlyReport entity)
+    public void Update(MonthlyReport entity)
     {
         _dbSet.Update(entity);
         _dbContext.SaveChanges();

@@ -13,14 +13,12 @@ public class WeeklyReportService : IWeeklyReportService
     {
         _weeklyReportReposity = weeklyReportReposity;
     }
-
-
+    
     public WeeklyReportDTO GetById(int id)
     {
         var report = _weeklyReportReposity.FindById(id);
         var reportDTO = new WeeklyReportDTO
         {
-            Id = 0,
             CreationDate = report.CreationDate,
             StartDate = report.StartDate,
             EndDate = report.EndDate,
@@ -52,15 +50,15 @@ public class WeeklyReportService : IWeeklyReportService
         _weeklyReportReposity.Delete(id);
     }
 
-    public void Update(int id, WeeklyReportCreateDTO entity)
+    public void Update(WeeklyReportDTO entity)
     {
-        var report = _weeklyReportReposity.FindById(id);
+        var report = _weeklyReportReposity.FindById(entity.Id);
 
         if (report == null)
         {
             throw new Exception("No data was found in the database with this ID.");
         }
-
+        
         report.CreationDate = entity.CreationDate;
         report.Subject = entity.Subject;
         report.Title = entity.Title;
@@ -68,7 +66,7 @@ public class WeeklyReportService : IWeeklyReportService
         report.StartDate = entity.StartDate;
         report.EndDate = entity.EndDate;
 
-        _weeklyReportReposity.Update(id, report);
+        _weeklyReportReposity.Update(report);
     }
 
     public List<WeeklyReport> GetAll()

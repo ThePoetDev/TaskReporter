@@ -48,21 +48,21 @@ public class DailyReportService : IDailyReportService
         _dailyReportRepository.Delete(id);
     }
 
-    public void Update(int id, DailyReportCreateDTO entity)
+    public void Update(DailyReportDTO entity)
     {
-        var report = _dailyReportRepository.FindById(id);
+        var report = _dailyReportRepository.FindById(entity.Id);
 
         if (report == null)
         {
             throw new Exception("No data was found in the database with this ID.");
         }
-
+        
         report.CreationDate = entity.CreationDate;
         report.Subject = entity.Subject;
         report.Title = entity.Title;
         report.Context = entity.Context;
         
-        _dailyReportRepository.Update(id, report);
+        _dailyReportRepository.Update(report);
     }
 
     public List<DailyReport> GetAll()
