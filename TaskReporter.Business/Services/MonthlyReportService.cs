@@ -49,9 +49,9 @@ public class MonthlyReportService : IMonthlyReportService
         _monthlyReportReposity.Delete(id);
     }
 
-    public void Update(int id, MonthlyReportCreateDTO entity)
+    public void Update(MonthlyReportDTO entity)
     {
-        var report = _monthlyReportReposity.FindById(id);
+        var report = _monthlyReportReposity.FindById(entity.Id);
         
         if (report == null)
         {
@@ -64,7 +64,7 @@ public class MonthlyReportService : IMonthlyReportService
         report.Title = entity.Title;
         report.Context = entity.Context;
         
-        _monthlyReportReposity.Update(id, report);
+        _monthlyReportReposity.Update(report);
     }
 
     public List<MonthlyReport> GetAll()

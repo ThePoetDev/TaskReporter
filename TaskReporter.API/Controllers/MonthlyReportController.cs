@@ -34,9 +34,9 @@ public class MonthlyReportController
     }
 
     [HttpPut("MonthlyUpdate")]
-    public void Update(int id, MonthlyReportCreateDTO report)
+    public void Update(MonthlyReportDTO report)
     {
-        _monthlyReportService.Update(id, report);
+        _monthlyReportService.Update(report);
     }
 
     [HttpGet("MonthlyGetAll")]

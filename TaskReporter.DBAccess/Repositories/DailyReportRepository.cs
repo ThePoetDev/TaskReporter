@@ -33,7 +33,7 @@ public class DailyReportRepository : IDailyReportRepository
         _dbContext.SaveChanges();
     }
 
-    public void Update(int id, DailyReport entity)
+    public void Update(DailyReport entity)
     {
         _dbSet.Update(entity);
         _dbContext.SaveChanges();
