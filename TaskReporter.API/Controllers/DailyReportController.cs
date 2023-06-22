@@ -40,7 +40,7 @@ public class DailyReportController
     }
 
     [HttpGet("DailyGetAll")]
-    public List<DailyReport> GetAll()
+    public List<DailyReportDTO> GetAll()
     {
         return _dailyReportService.GetAll();
     }

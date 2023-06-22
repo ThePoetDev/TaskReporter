@@ -70,8 +70,20 @@ public class MonthlyReportService : IMonthlyReportService
         _monthlyReportReposity.Update(report);
     }
 
-    public List<MonthlyReport> GetAll()
+    public List<MonthlyReportDTO> GetAll()
     {
-        return _monthlyReportReposity.GetAll();
+        var ReportList = _monthlyReportReposity.GetAll();
+        var DTOList = ReportList.Select(c => new MonthlyReportDTO
+        {
+            CreationDate = c.CreationDate,
+            MonthName = c.MonthName,
+            Subject = c.Subject,
+            Title = c.Title,
+            Context = c.Context,
+            OwnerId = c.OwnerId,
+            Id = c.Id
+        }).ToList();
+        
+        return DTOList;
     }
 }

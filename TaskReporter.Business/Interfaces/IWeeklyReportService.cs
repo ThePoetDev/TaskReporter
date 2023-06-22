@@ -9,6 +9,6 @@ public interface IWeeklyReportService
     void Insert(WeeklyReportCreateDTO entity);
     void Delete(int id);
     void Update(WeeklyReportDTO entity);
-    List<WeeklyReport> GetAll();
+    List<WeeklyReportDTO> GetAll();
 
 }

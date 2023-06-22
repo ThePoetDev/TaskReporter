@@ -68,8 +68,19 @@ public class DailyReportService : IDailyReportService
         _dailyReportRepository.Update(report);
     }
 
-    public List<DailyReport> GetAll()
+    public List<DailyReportDTO> GetAll()
     {
-        return _dailyReportRepository.GetAll();
+        var ReportList = _dailyReportRepository.GetAll();
+        var DTOList = ReportList.Select(c => new DailyReportDTO
+        {
+            CreationDate = c.CreationDate,
+            Subject = c.Subject,
+            Title = c.Title,
+            Context = c.Context,
+            OwnerId = c.OwnerId,
+            Id = c.Id
+        }).ToList();
+        
+        return DTOList;
     }
 }
