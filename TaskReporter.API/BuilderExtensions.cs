@@ -18,9 +18,11 @@ public static class BuilderExtensions
         builder.Services.AddTransient<IDailyReportService, DailyReportService>();
         builder.Services.AddTransient<IDailyReportRepository, DailyReportRepository>();
         builder.Services.AddTransient<IWeeklyReportService, WeeklyReportService>();
-        builder.Services.AddTransient<IWeeklyReportReposity, WeeklyReportRepository>();
+        builder.Services.AddTransient<IWeeklyReportRepository, WeeklyReportRepository>();
         builder.Services.AddTransient<IMonthlyReportService, MonthlyReportService>();
         builder.Services.AddTransient<IMonthlyReportReposity, MonthlyReportRepository>();
+        builder.Services.AddTransient<IUserService, UserService>();
+        builder.Services.AddTransient<IUserRepository, UserRepository>();
     }
     
     public static void ConfigureEnvironments(this WebApplicationBuilder builder)

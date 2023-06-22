@@ -1241,6 +1241,16 @@
           "bin/placeholder/TaskReporter.Business.dll": {}
         }
       },
+      "TaskReporter.Constant/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/TaskReporter.Constant.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskReporter.Constant.dll": {}
+        }
+      },
       "TaskReporter.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1257,6 +1267,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
+          "TaskReporter.Constant": "1.0.0",
           "TaskReporter.Domain": "1.0.0"
         },
         "compile": {
@@ -3923,6 +3934,11 @@
       "type": "project",
       "path": "../TaskReporter.Business/TaskReporter.Business.csproj",
       "msbuildProject": "../TaskReporter.Business/TaskReporter.Business.csproj"
+    },
+    "TaskReporter.Constant/1.0.0": {
+      "type": "project",
+      "path": "../TaskReporter.Constant/TaskReporter.Constant.csproj",
+      "msbuildProject": "../TaskReporter.Constant/TaskReporter.Constant.csproj"
     },
     "TaskReporter.Core/1.0.0": {
       "type": "project",

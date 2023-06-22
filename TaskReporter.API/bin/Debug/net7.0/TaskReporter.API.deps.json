@@ -692,6 +692,11 @@
           "TaskReporter.Business.dll": {}
         }
       },
+      "TaskReporter.Constant/1.0.0": {
+        "runtime": {
+          "TaskReporter.Constant.dll": {}
+        }
+      },
       "TaskReporter.Core/1.0.0": {
         "runtime": {
           "TaskReporter.Core.dll": {}
@@ -701,6 +706,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
+          "TaskReporter.Constant": "1.0.0",
           "TaskReporter.Domain": "1.0.0"
         },
         "runtime": {
@@ -1235,6 +1241,11 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "TaskReporter.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TaskReporter.Constant/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

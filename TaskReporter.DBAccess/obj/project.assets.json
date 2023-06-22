@@ -1133,6 +1133,16 @@
           }
         }
       },
+      "TaskReporter.Constant/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/TaskReporter.Constant.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskReporter.Constant.dll": {}
+        }
+      },
       "TaskReporter.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3476,6 +3486,11 @@
         "version.txt"
       ]
     },
+    "TaskReporter.Constant/1.0.0": {
+      "type": "project",
+      "path": "../TaskReporter.Constant/TaskReporter.Constant.csproj",
+      "msbuildProject": "../TaskReporter.Constant/TaskReporter.Constant.csproj"
+    },
     "TaskReporter.Core/1.0.0": {
       "type": "project",
       "path": "../TaskReporter.Core/TaskReporter.Core.csproj",
@@ -3492,6 +3507,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
+      "TaskReporter.Constant >= 1.0.0",
       "TaskReporter.Domain >= 1.0.0"
     ]
   },
@@ -3527,6 +3543,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\bugra\\RiderProjects\\TaskReporter\\TaskReporter.Constant\\TaskReporter.Constant.csproj": {
+              "projectPath": "C:\\Users\\bugra\\RiderProjects\\TaskReporter\\TaskReporter.Constant\\TaskReporter.Constant.csproj"
+            },
             "C:\\Users\\bugra\\RiderProjects\\TaskReporter\\TaskReporter.Domain\\TaskReporter.Domain.csproj": {
               "projectPath": "C:\\Users\\bugra\\RiderProjects\\TaskReporter\\TaskReporter.Domain\\TaskReporter.Domain.csproj"
             }

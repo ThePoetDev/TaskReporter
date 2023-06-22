@@ -21,6 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\TaskReporter.Constant\TaskReporter.Constant.csproj" />
       <ProjectReference Include="..\TaskReporter.Domain\TaskReporter.Domain.csproj" />
     </ItemGroup>
 

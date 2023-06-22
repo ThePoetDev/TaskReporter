@@ -41,6 +41,6 @@ public class MonthlyReportRepository : IMonthlyReportReposity
 
     public List<MonthlyReport> GetAll()
     {
-        return _dbSet.AsQueryable().ToList();
+        return _dbSet.Include(r => r.Owner).ToList();
     }
 }
