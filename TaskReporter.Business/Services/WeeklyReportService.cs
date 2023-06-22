@@ -73,8 +73,21 @@ public class WeeklyReportService : IWeeklyReportService
         _weeklyReportRepository.Update(report);
     }
 
-    public List<WeeklyReport> GetAll()
+    public List<WeeklyReportDTO> GetAll()
     {
-        return _weeklyReportRepository.GetAll();
+        var ReportList = _weeklyReportRepository.GetAll();
+        var DTOList = ReportList.Select(c => new WeeklyReportDTO
+        {
+            CreationDate = c.CreationDate,
+            StartDate = c.StartDate,
+            EndDate = c.EndDate,
+            Subject = c.Subject,
+            Title = c.Title,
+            Context = c.Context,
+            OwnerId = c.OwnerId,
+            Id = c.Id
+        }).ToList();
+        
+        return DTOList;
     }
 }

@@ -9,5 +9,5 @@ public interface IDailyReportService
     void Insert(DailyReportCreateDTO entity);
     void Delete(int id);
     void Update(DailyReportDTO entity);
-    List<DailyReport> GetAll();
+    List<DailyReportDTO> GetAll();
 }

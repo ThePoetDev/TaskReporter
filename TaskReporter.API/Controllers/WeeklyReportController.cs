@@ -40,7 +40,7 @@ public class WeeklyReportController
     }
 
     [HttpGet("WeeklyGetAll")]
-    public List<WeeklyReport> GetAll()
+    public List<WeeklyReportDTO> GetAll()
     {
         return _weeklyReportService.GetAll();
     }

@@ -40,7 +40,7 @@ public class MonthlyReportController
     }
 
     [HttpGet("MonthlyGetAll")]
-    public List<MonthlyReport> GetAll()
+    public List<MonthlyReportDTO> GetAll()
     {
         return _monthlyReportService.GetAll();
     }

@@ -9,5 +9,5 @@ public interface IMonthlyReportService
     void Insert(MonthlyReportCreateDTO entity);
     void Delete(int id);
     void Update(MonthlyReportDTO entity);
-    List<MonthlyReport> GetAll();
+    List<MonthlyReportDTO> GetAll();
 }
