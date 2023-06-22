@@ -41,6 +41,6 @@ public class DailyReportRepository : IDailyReportRepository
 
     public List<DailyReport> GetAll()
     {
-        return _dbSet.AsQueryable().ToList();
+        return _dbSet.Include(r => r.Owner).ToList();
     }
 }

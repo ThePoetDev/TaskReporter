@@ -5,7 +5,7 @@ using TaskReporter.Domain.Entities;
 
 namespace EntityFramework.Repositories;
 
-public class WeeklyReportRepository : IWeeklyReportReposity
+public class WeeklyReportRepository : IWeeklyReportRepository
 {
     private readonly TaskReporterDBContext _dbContext;
     private readonly DbSet<WeeklyReport> _dbSet;
@@ -41,6 +41,6 @@ public class WeeklyReportRepository : IWeeklyReportReposity
 
     public List<WeeklyReport> GetAll()
     {
-        return _dbSet.AsQueryable().ToList();
+        return _dbSet.Include(r => r.Owner).ToList();
     }
 }

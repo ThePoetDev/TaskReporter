@@ -23,7 +23,8 @@ public class DailyReportService : IDailyReportService
             CreationDate = report.CreationDate,
             Subject = report.Subject,
             Title = report.Title,
-            Context = report.Context
+            Context = report.Context,
+            OwnerId = report.OwnerId
         };
 
         return reportDTO;
@@ -36,7 +37,8 @@ public class DailyReportService : IDailyReportService
             CreationDate = entity.CreationDate,
             Subject = entity.Subject,
             Title = entity.Title,
-            Context = entity.Context
+            Context = entity.Context,
+            OwnerId = entity.OwnerId
         };
         
         _dailyReportRepository.Insert(report);
@@ -61,6 +63,7 @@ public class DailyReportService : IDailyReportService
         report.Subject = entity.Subject;
         report.Title = entity.Title;
         report.Context = entity.Context;
+        report.OwnerId = entity.OwnerId;
         
         _dailyReportRepository.Update(report);
     }

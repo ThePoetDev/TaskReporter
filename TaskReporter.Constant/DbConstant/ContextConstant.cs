@@ -6,4 +6,5 @@ public static class ContextConstant
     public const string WeeklyReportTableName = "WeeklyReports";
     public const string MonthlyReportTableName = "MonthlyReports";
     public const string DailyReportTableName = "DailyReports";
+    public const string UserTableName = "Users";
 }

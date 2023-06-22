@@ -1,11 +1,13 @@
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.Business.deps.json
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.Business.dll
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.Business.pdb
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.Constant.dll
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.Core.dll
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.DBAccess.dll
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.Domain.dll
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.DBAccess.pdb
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.Domain.pdb
+C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.Constant.pdb
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\bin\Debug\net7.0\TaskReporter.Core.pdb
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\obj\Debug\net7.0\TaskReporter.Business.csproj.AssemblyReference.cache
 C:\Users\bugra\RiderProjects\TaskReporter\TaskReporter.Business\obj\Debug\net7.0\TaskReporter.Business.GeneratedMSBuildEditorConfig.editorconfig

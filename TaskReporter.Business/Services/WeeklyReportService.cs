@@ -7,16 +7,16 @@ namespace TaskReporter.Business.Services;
 
 public class WeeklyReportService : IWeeklyReportService
 {
-    private readonly IWeeklyReportReposity _weeklyReportReposity;
+    private readonly IWeeklyReportRepository _weeklyReportRepository;
 
-    public WeeklyReportService(IWeeklyReportReposity weeklyReportReposity)
+    public WeeklyReportService(IWeeklyReportRepository weeklyReportRepository)
     {
-        _weeklyReportReposity = weeklyReportReposity;
+        _weeklyReportRepository = weeklyReportRepository;
     }
     
     public WeeklyReportDTO GetById(int id)
     {
-        var report = _weeklyReportReposity.FindById(id);
+        var report = _weeklyReportRepository.FindById(id);
         var reportDTO = new WeeklyReportDTO
         {
             CreationDate = report.CreationDate,
@@ -24,7 +24,9 @@ public class WeeklyReportService : IWeeklyReportService
             EndDate = report.EndDate,
             Subject = report.Subject,
             Title = report.Title,
-            Context = report.Context
+            Context = report.Context,
+            OwnerId = report.OwnerId
+
         };
 
         return reportDTO;
@@ -39,20 +41,21 @@ public class WeeklyReportService : IWeeklyReportService
             Title = entity.Title,
             Context = entity.Context,
             StartDate = entity.StartDate,
-            EndDate = entity.EndDate
+            EndDate = entity.EndDate,
+            OwnerId = entity.OwnerId
         };
         
-        _weeklyReportReposity.Insert(report);
+        _weeklyReportRepository.Insert(report);
     }
 
     public void Delete(int id)
     {
-        _weeklyReportReposity.Delete(id);
+        _weeklyReportRepository.Delete(id);
     }
 
     public void Update(WeeklyReportDTO entity)
     {
-        var report = _weeklyReportReposity.FindById(entity.Id);
+        var report = _weeklyReportRepository.FindById(entity.Id);
 
         if (report == null)
         {
@@ -65,12 +68,13 @@ public class WeeklyReportService : IWeeklyReportService
         report.Context = entity.Context;
         report.StartDate = entity.StartDate;
         report.EndDate = entity.EndDate;
+        report.OwnerId = entity.OwnerId;
 
-        _weeklyReportReposity.Update(report);
+        _weeklyReportRepository.Update(report);
     }
 
     public List<WeeklyReport> GetAll()
     {
-        return _weeklyReportReposity.GetAll();
+        return _weeklyReportRepository.GetAll();
     }
 }

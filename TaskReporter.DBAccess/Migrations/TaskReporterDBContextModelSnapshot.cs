@@ -38,6 +38,9 @@ namespace EntityFramework.Migrations
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("OwnerId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Subject")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -50,7 +53,9 @@ namespace EntityFramework.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("DailyReport");
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("DailyReports", "TaskReporter");
                 });
 
             modelBuilder.Entity("TaskReporter.Domain.Entities.MonthlyReport", b =>
@@ -74,6 +79,9 @@ namespace EntityFramework.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("OwnerId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Subject")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -86,7 +94,32 @@ namespace EntityFramework.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MonthlyReport");
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("MonthlyReports", "TaskReporter");
+                });
+
+            modelBuilder.Entity("TaskReporter.Domain.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users", "TaskReporter");
                 });
 
             modelBuilder.Entity("TaskReporter.Domain.Entities.WeeklyReport", b =>
@@ -108,6 +141,9 @@ namespace EntityFramework.Migrations
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("OwnerId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
@@ -123,7 +159,42 @@ namespace EntityFramework.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("WeeklyReport");
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("WeeklyReports", "TaskReporter");
+                });
+
+            modelBuilder.Entity("TaskReporter.Domain.Entities.DailyReport", b =>
+                {
+                    b.HasOne("TaskReporter.Domain.Entities.User", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("TaskReporter.Domain.Entities.MonthlyReport", b =>
+                {
+                    b.HasOne("TaskReporter.Domain.Entities.User", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("TaskReporter.Domain.Entities.WeeklyReport", b =>
+                {
+                    b.HasOne("TaskReporter.Domain.Entities.User", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Owner");
                 });
 #pragma warning restore 612, 618
         }

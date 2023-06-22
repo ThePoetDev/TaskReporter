@@ -24,7 +24,8 @@ public class MonthlyReportService : IMonthlyReportService
             CreationDate = report.CreationDate,
             Subject = report.Subject,
             Title = report.Title,
-            Context = report.Context
+            Context = report.Context,
+            OwnerId = report.OwnerId
         };
 
         return reportDTO;
@@ -38,7 +39,8 @@ public class MonthlyReportService : IMonthlyReportService
             Subject = entity.Subject,
             Title = entity.Title,
             Context = entity.Context,
-            MonthName = entity.MonthName
+            MonthName = entity.MonthName,
+            OwnerId = entity.OwnerId
         };
         
         _monthlyReportReposity.Insert(report);
@@ -63,6 +65,7 @@ public class MonthlyReportService : IMonthlyReportService
         report.Subject = entity.Subject;
         report.Title = entity.Title;
         report.Context = entity.Context;
+        report.OwnerId = entity.OwnerId;
         
         _monthlyReportReposity.Update(report);
     }

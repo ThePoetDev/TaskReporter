@@ -1,4 +1,6 @@
-﻿namespace TaskReporter.Business.DTO;
+﻿using TaskReporter.Domain.Entities;
+
+namespace TaskReporter.Business.DTO;
 
 public class DailyReportDTO : DailyReportCreateDTO
 {
@@ -11,4 +13,5 @@ public class DailyReportCreateDTO
     public string Subject { get; set; }
     public string Title { get; set; }
     public string Context { get; set; }
+    public int OwnerId { get; set; }
 }
